@@ -59,7 +59,7 @@
   \raggedcolumns
   \section*{Constants}
   \begin{gather}
-    c = \lambda \nu = \qty{2.997925e8}{\meter\per\second} \tag{Speed of Light} \\
+    c = \lambda \nu = \qty{2.997925e8}{\meter\per\second} \tag{Speed of Light in Free Space} \\
     e = q_e = q_p = \qty{1.602177e-19}{\coulomb} \implies \qty{1}{\electronvolt} = \qty{1.602177e-19}{\joule} \tag{Unit Charge} \\
     k_\mathrm{e} = \qty{8.987551e9}{\newton\meter\squared\per\coulomb\squared} \tag{Coulomb Constant} \\
     \varepsilon_0 = \qty{8.854188e-12}{\coulomb\squared\per\newton\per\meter\squared} \tag{Permittivity of Free Space} \\
@@ -79,7 +79,7 @@
   \begin{gather}
     \beta \coloneq v/c \tag{Definition of Fraction of Speed of Light} \\
     \gamma \coloneq 1/\sqrt{1-(v/c)^2} = 1/\sqrt{1-\beta^2} \tag{Definition of Lorentz Factor} \\
-    s^2 = (c\Delta t)^2 - (\Delta \vec{x})^2 \implies \mathrm{d}S = (c\mathrm{d}t)^2 - (\mathrm{d}\vec{x})^2 \tag{Spacetime Interval} \\
+    s^2 = (c\Delta t)^2 - \left\Vert{\Delta\vec{x}}\right\Vert^2 \implies \left(\mathrm{d}S\right)^2 = (c\mathrm{d}t)^2 - \left\Vert{\mathrm{d}\vec{x}}\right\Vert^2 \tag{Spacetime Interval} \\
     L_\text{obs} = L_\text{real}/\gamma \tag{Length Contraction} \\ 
     t_\text{obs} = t_\text{real}\gamma \tag{Time Dilation}
   \end{gather}
@@ -112,8 +112,8 @@
     K_n = \frac{1}{2}mv^2 = \frac{1}{2}m_ev_n^2 = \frac{k_\mathrm{e}^2Z^2m_ee^4}{2n^2\hbar^2} \implies 2K_n + U_n = 0\tag{Kinetic Energy}\\
     E_n = K_n + U_n = -\frac{k_\mathrm{e}^2Z^2m_ee^4}{2n^2\hbar^2} = -E_1\frac{Z^2}{n^2} \tag{Total Mechanical Energy Magnitude} \\
     E_1 \coloneq \frac{k_\mathrm{e}^2m_ee^4}{2\hbar^2} = \frac{m_e e^4}{8\varepsilon_0h^2}\tag{Total Mechanical Energy Magnitude for \(n=1\) \ce{H} Electron} \\
-    \frac{1}{\lambda} = R_{\ce{H}} \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right) \tag{Rydberg Formula} \\
-    R_{\ce{H}} \coloneq -\frac{m_e e^4}{8h^3\varepsilon_0^3c}\tag{Rydberg Formulae for a \ce{H} Electron}
+    \frac{1}{\lambda} = R_{\ce{H}} \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right) \tag{Rydberg Formula for a \ce{H} electron} \\
+    R_{\ce{H}} \coloneq -\frac{m_e e^4}{8h^3\varepsilon_0^3c}\tag{Rydberg Constant for a \ce{H} electron}
   \end{gather}
   Note: \(a_0\) also equals the modal distance between the nucleus and electron of a \ce{H} atom.
   Note: Velocities are assumed to be non-relativistic (\(v \ll c\)).
@@ -131,7 +131,7 @@
     D(x_0,t) = A\sin{\left(-2\pi ft + \varphi'\right)} = A\sin{\left(-\omega t + \varphi'\right)} \tag{SWD in a History Graph} \\
     D(x, t) = D(x + n\lambda, t + mT) \; \forall\, n, m \in \mathbb{Z} \tag{SWD spatial-temporal periodicity} \\
     V(x, t) = \frac{{\partial}D(x,t)}{{\partial}t} = -\omega A \cos{\left(kx - \omega t + \varphi\right)} \tag{SWD particle velocity} \\
-    V(x_0, t) = \left.{\frac{{\partial}D(x,t)}{{\partial}t}}\right\vert_{x=x_0} = -\omega A \cos{\left(\omega t + \varphi'\right)} \tag{SWD particle velocity history graph}
+    V(x_0, t) = \left.{\frac{{\partial}D(x,t)}{{\partial}t}}\right\vert_{x=x_0} \hspace{-4ex}= -\omega A \cos{\left(\omega t + \varphi'\right)} \tag{SWD particle velocity history graph}
   \end{gather}
   \subsection{Quantum Mechanics}
   \subsubsection{Schrödinger's Equation}
